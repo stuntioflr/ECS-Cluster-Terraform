@@ -17,8 +17,5 @@ resource "aws_launch_configuration" "ecs-launch-configuration" {
     security_groups             = var.security_groups 
     associate_public_ip_address = "true"
     key_name                    = "${var.ecs_key_pair_name}"
-    user_data                   = <<EOF
-                                  #!/bin/bash
-                                  echo ECS_CLUSTER=${var.ecs_cluster} >> /etc/ecs/ecs.config
-                                  EOF
+    user_data                   = "#!/bin/bash\necho 'ECS_CLUSTER=example-cluster' > /etc/ecs/ecs.config\nstart ecs"
 }

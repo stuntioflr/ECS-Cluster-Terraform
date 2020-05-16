@@ -41,8 +41,3 @@ resource "aws_alb_listener" "alb-listener" {
         type             = "forward"
     }
 }
-resource "null_resource" "delay" {
-  provisioner "local-exec" {
-    command = "sleep 50"
-  }
-}
