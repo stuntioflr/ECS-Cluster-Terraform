@@ -3,8 +3,8 @@ ecs_cluster="T34ak-Ecs"
 instance_type = "t2.micro"
 ecs_key_pair_name="t34ak"
 <<<<<<< HEAD
-aws_access_key_id = "AKIAJO6ZIHTSIL5BVTZQ"
-aws_secret_access_key = "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"
+aws_access_key_id = "xxxxccccc"
+aws_secret_access_key = "xxx"
 =======
 aws_access_key_id = "xxxxxx" 
 aws_secret_access_key = "xxxxxxx"
